@@ -1,0 +1,977 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C3095F22CBE8DDE004070B0 /* cheering.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C3095EC2CBE8DDE004070B0 /* cheering.wav */; };
+		0C3095F32CBE8DDE004070B0 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C3095ED2CBE8DDE004070B0 /* coin.wav */; };
+		0C3095F42CBE8DDE004070B0 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C3095EE2CBE8DDE004070B0 /* lose.wav */; };
+		0C3095F52CBE8DDE004070B0 /* running.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C3095EF2CBE8DDE004070B0 /* running.wav */; };
+		0C3095F62CBE8DDE004070B0 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C3095F02CBE8DDE004070B0 /* win.wav */; };
+		0C3095F82CBE8E1B004070B0 /* playsound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3095F72CBE8E1B004070B0 /* playsound.swift */; };
+		0C3095FA2CBEA7EF004070B0 /* EquipmentComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3095F92CBEA7EF004070B0 /* EquipmentComponents.swift */; };
+		0C3095FC2CBEA913004070B0 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3095FB2CBEA913004070B0 /* Bag.swift */; };
+		A61639DE2C814FBA00CD4E64 /* FitnessGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61639DD2C814FBA00CD4E64 /* FitnessGoApp.swift */; };
+		A61639E02C814FBA00CD4E64 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61639DF2C814FBA00CD4E64 /* HealthView.swift */; };
+		A61639E22C814FBE00CD4E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61639E12C814FBE00CD4E64 /* Assets.xcassets */; };
+		A61639E52C814FBE00CD4E64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61639E42C814FBE00CD4E64 /* Preview Assets.xcassets */; };
+		A61639EF2C814FBE00CD4E64 /* FitnessGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61639EE2C814FBE00CD4E64 /* FitnessGoTests.swift */; };
+		A61639F92C814FBE00CD4E64 /* FitnessGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61639F82C814FBE00CD4E64 /* FitnessGoUITests.swift */; };
+		A61639FB2C814FBE00CD4E64 /* FitnessGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61639FA2C814FBE00CD4E64 /* FitnessGoUITestsLaunchTests.swift */; };
+		A6163A082C8736D600CD4E64 /* StepsExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A072C8736D600CD4E64 /* StepsExchange.swift */; };
+		A6163A0A2C87385A00CD4E64 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A092C87385A00CD4E64 /* HealthData.swift */; };
+		A6163A0C2C87387100CD4E64 /* NavbarHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A0B2C87387100CD4E64 /* NavbarHealth.swift */; };
+		A6163A102C886EA300CD4E64 /* RequestConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A0F2C886EA300CD4E64 /* RequestConfirm.swift */; };
+		A6163A1C2C8886A900CD4E64 /* RuleOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A1B2C8886A900CD4E64 /* RuleOverview.swift */; };
+		A6163A1E2C88874500CD4E64 /* BackSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A1D2C88874500CD4E64 /* BackSymbol.swift */; };
+		A6163A202C88879700CD4E64 /* GameStartTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A1F2C88879700CD4E64 /* GameStartTitle.swift */; };
+		A6163A222C888D1600CD4E64 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A212C888D1600CD4E64 /* Rule.swift */; };
+		A6163A242C893DE000CD4E64 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A232C893DE000CD4E64 /* Line.swift */; };
+		A6163A272C8940B700CD4E64 /* StartGameOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A262C8940B700CD4E64 /* StartGameOverview.swift */; };
+		A6163A292C895B0900CD4E64 /* PlayGamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6163A282C895B0900CD4E64 /* PlayGamePage.swift */; };
+		A669ACD92C9592F4008C6EA4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A669ACD82C9592F4008C6EA4 /* GameScene.sks */; };
+		A669ACDB2C9594BB008C6EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669ACDA2C9594BB008C6EA4 /* AppDelegate.swift */; };
+		A669AD1E2C95995A008C6EA4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD1D2C95995A008C6EA4 /* GameViewController.swift */; };
+		A669AD252C960531008C6EA4 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD242C960531008C6EA4 /* SpriteKit.framework */; };
+		A669AD272C960734008C6EA4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD262C960734008C6EA4 /* GameScene.swift */; };
+		A669AD672C96A7A9008C6EA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A669AD662C96A7A9008C6EA4 /* Main.storyboard */; };
+		A669AD692C96AA07008C6EA4 /* GameViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD682C96AA07008C6EA4 /* GameViewControllerRepresentable.swift */; };
+		A669AD6D2C96F8CA008C6EA4 /* RunGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD6C2C96F8CA008C6EA4 /* RunGame.swift */; };
+		A669AD6F2C98052C008C6EA4 /* GameExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD6E2C98052C008C6EA4 /* GameExtenstion.swift */; };
+		A669AD712C997057008C6EA4 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD702C997057008C6EA4 /* ObservableObject.swift */; };
+		A669AD732C9B3518008C6EA4 /* ShowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD722C9B3518008C6EA4 /* ShowGiftView.swift */; };
+		A669AD752C9B359A008C6EA4 /* SpinItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD742C9B359A008C6EA4 /* SpinItemsModel.swift */; };
+		A669AD772C9B35F8008C6EA4 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD762C9B35F8008C6EA4 /* Equipment.swift */; };
+		A669AD852CAE8C8D008C6EA4 /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD842CAE8C8D008C6EA4 /* StepModel.swift */; };
+		A669AD882CAE94D7008C6EA4 /* StepCountView_backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD872CAE94D7008C6EA4 /* StepCountView_backup.swift */; };
+		A669AD8A2CAE9550008C6EA4 /* GlobalEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A669AD892CAE9550008C6EA4 /* GlobalEnvironment.swift */; };
+		A69A6F2E2C9318D1002799A7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A6F2D2C9318D1002799A7 /* Login.swift */; };
+		A69A6F302C9318F6002799A7 /* helpdocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A6F2F2C9318F6002799A7 /* helpdocument.swift */; };
+		A69A6F322C931E17002799A7 /* NavbarProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A6F312C931E17002799A7 /* NavbarProfile.swift */; };
+		A69A6F342C931EAC002799A7 /* NavbarLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A6F332C931EAC002799A7 /* NavbarLogin.swift */; };
+		A69A6F362C9339A3002799A7 /* ButtonPressActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A6F352C9339A3002799A7 /* ButtonPressActions.swift */; };
+		A69A6F382C933B46002799A7 /* SpinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A6F372C933B46002799A7 /* SpinsView.swift */; };
+		A6F8D1642C896BC700093C59 /* NavbarGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1632C896BC700093C59 /* NavbarGame.swift */; };
+		A6F8D1662C896D0F00093C59 /* NavbarCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1652C896D0F00093C59 /* NavbarCommunity.swift */; };
+		A6F8D1692C896DC500093C59 /* ExchangeOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1682C896DC500093C59 /* ExchangeOverview.swift */; };
+		A6F8D16B2C896DF200093C59 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D16A2C896DF200093C59 /* Rate.swift */; };
+		A6F8D1B22C8C765700093C59 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1B12C8C765700093C59 /* CommunityView.swift */; };
+		A6F8D1B42C8C771300093C59 /* VsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1B32C8C771300093C59 /* VsView.swift */; };
+		A6F8D1B62C8C774D00093C59 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1B52C8C774D00093C59 /* RankView.swift */; };
+		A6F8D1B82C8C777900093C59 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1B72C8C777900093C59 /* WinView.swift */; };
+		A6F8D1BA2C8C77CE00093C59 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1B92C8C77CE00093C59 /* GameOverView.swift */; };
+		A6F8D1BD2C8C7E5500093C59 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1BC2C8C7E5500093C59 /* UserProfile.swift */; };
+		A6F8D1C02C8C7EA100093C59 /* device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1BF2C8C7EA100093C59 /* device.swift */; };
+		A6F8D1C22C8C7EEE00093C59 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1C12C8C7EEE00093C59 /* Register.swift */; };
+		A6F8D1C42C8C7F5900093C59 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D1C32C8C7F5900093C59 /* extension.swift */; };
+		A6FC92AE2CB64E5C0005B892 /* CheckboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC92AD2CB64E5C0005B892 /* CheckboxModel.swift */; };
+		A6FC92B42CB77E1B0005B892 /* StepRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FC92B32CB77E1B0005B892 /* StepRead.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A61639EB2C814FBE00CD4E64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61639D22C814FBA00CD4E64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61639D92C814FBA00CD4E64;
+			remoteInfo = FitnessGo;
+		};
+		A61639F52C814FBE00CD4E64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61639D22C814FBA00CD4E64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61639D92C814FBA00CD4E64;
+			remoteInfo = FitnessGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C3095EC2CBE8DDE004070B0 /* cheering.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheering.wav; sourceTree = "<group>"; };
+		0C3095ED2CBE8DDE004070B0 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		0C3095EE2CBE8DDE004070B0 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		0C3095EF2CBE8DDE004070B0 /* running.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = running.wav; sourceTree = "<group>"; };
+		0C3095F02CBE8DDE004070B0 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		0C3095F72CBE8E1B004070B0 /* playsound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playsound.swift; sourceTree = "<group>"; };
+		0C3095F92CBEA7EF004070B0 /* EquipmentComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentComponents.swift; sourceTree = "<group>"; };
+		0C3095FB2CBEA913004070B0 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		A61639DA2C814FBA00CD4E64 /* FitnessGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61639DD2C814FBA00CD4E64 /* FitnessGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoApp.swift; sourceTree = "<group>"; };
+		A61639DF2C814FBA00CD4E64 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		A61639E12C814FBE00CD4E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61639E42C814FBE00CD4E64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A61639EA2C814FBE00CD4E64 /* FitnessGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61639EE2C814FBE00CD4E64 /* FitnessGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoTests.swift; sourceTree = "<group>"; };
+		A61639F42C814FBE00CD4E64 /* FitnessGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61639F82C814FBE00CD4E64 /* FitnessGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoUITests.swift; sourceTree = "<group>"; };
+		A61639FA2C814FBE00CD4E64 /* FitnessGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6163A072C8736D600CD4E64 /* StepsExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsExchange.swift; sourceTree = "<group>"; };
+		A6163A092C87385A00CD4E64 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
+		A6163A0B2C87387100CD4E64 /* NavbarHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarHealth.swift; sourceTree = "<group>"; };
+		A6163A0F2C886EA300CD4E64 /* RequestConfirm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfirm.swift; sourceTree = "<group>"; };
+		A6163A1B2C8886A900CD4E64 /* RuleOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleOverview.swift; sourceTree = "<group>"; };
+		A6163A1D2C88874500CD4E64 /* BackSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSymbol.swift; sourceTree = "<group>"; };
+		A6163A1F2C88879700CD4E64 /* GameStartTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartTitle.swift; sourceTree = "<group>"; };
+		A6163A212C888D1600CD4E64 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		A6163A232C893DE000CD4E64 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		A6163A262C8940B700CD4E64 /* StartGameOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameOverview.swift; sourceTree = "<group>"; };
+		A6163A282C895B0900CD4E64 /* PlayGamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGamePage.swift; sourceTree = "<group>"; };
+		A669ACD82C9592F4008C6EA4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A669ACDA2C9594BB008C6EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A669AD1D2C95995A008C6EA4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A669AD242C960531008C6EA4 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A669AD262C960734008C6EA4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A669AD662C96A7A9008C6EA4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A669AD682C96AA07008C6EA4 /* GameViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		A669AD6C2C96F8CA008C6EA4 /* RunGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunGame.swift; sourceTree = "<group>"; };
+		A669AD6E2C98052C008C6EA4 /* GameExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameExtenstion.swift; sourceTree = "<group>"; };
+		A669AD702C997057008C6EA4 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		A669AD722C9B3518008C6EA4 /* ShowGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGiftView.swift; sourceTree = "<group>"; };
+		A669AD742C9B359A008C6EA4 /* SpinItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinItemsModel.swift; sourceTree = "<group>"; };
+		A669AD762C9B35F8008C6EA4 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		A669AD842CAE8C8D008C6EA4 /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		A669AD872CAE94D7008C6EA4 /* StepCountView_backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountView_backup.swift; sourceTree = "<group>"; };
+		A669AD892CAE9550008C6EA4 /* GlobalEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalEnvironment.swift; sourceTree = "<group>"; };
+		A69A6F2D2C9318D1002799A7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A69A6F2F2C9318F6002799A7 /* helpdocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpdocument.swift; sourceTree = "<group>"; };
+		A69A6F312C931E17002799A7 /* NavbarProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarProfile.swift; sourceTree = "<group>"; };
+		A69A6F332C931EAC002799A7 /* NavbarLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarLogin.swift; sourceTree = "<group>"; };
+		A69A6F352C9339A3002799A7 /* ButtonPressActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressActions.swift; sourceTree = "<group>"; };
+		A69A6F372C933B46002799A7 /* SpinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinsView.swift; sourceTree = "<group>"; };
+		A6F8D1632C896BC700093C59 /* NavbarGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarGame.swift; sourceTree = "<group>"; };
+		A6F8D1652C896D0F00093C59 /* NavbarCommunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarCommunity.swift; sourceTree = "<group>"; };
+		A6F8D1682C896DC500093C59 /* ExchangeOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeOverview.swift; sourceTree = "<group>"; };
+		A6F8D16A2C896DF200093C59 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		A6F8D1B12C8C765700093C59 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		A6F8D1B32C8C771300093C59 /* VsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VsView.swift; sourceTree = "<group>"; };
+		A6F8D1B52C8C774D00093C59 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		A6F8D1B72C8C777900093C59 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
+		A6F8D1B92C8C77CE00093C59 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		A6F8D1BC2C8C7E5500093C59 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A6F8D1BF2C8C7EA100093C59 /* device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device.swift; sourceTree = "<group>"; };
+		A6F8D1C12C8C7EEE00093C59 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		A6F8D1C32C8C7F5900093C59 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		A6FC92AD2CB64E5C0005B892 /* CheckboxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxModel.swift; sourceTree = "<group>"; };
+		A6FC92B32CB77E1B0005B892 /* StepRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepRead.swift; sourceTree = "<group>"; };
+		A6FC92ED2CB784160005B892 /* FitnessGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitnessGo.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A61639D72C814FBA00CD4E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A669AD252C960531008C6EA4 /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61639E72C814FBE00CD4E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61639F12C814FBE00CD4E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C3095F12CBE8DDE004070B0 /* Sound effect */ = {
+			isa = PBXGroup;
+			children = (
+				0C3095EC2CBE8DDE004070B0 /* cheering.wav */,
+				0C3095ED2CBE8DDE004070B0 /* coin.wav */,
+				0C3095EE2CBE8DDE004070B0 /* lose.wav */,
+				0C3095EF2CBE8DDE004070B0 /* running.wav */,
+				0C3095F02CBE8DDE004070B0 /* win.wav */,
+				0C3095F72CBE8E1B004070B0 /* playsound.swift */,
+			);
+			path = "Sound effect";
+			sourceTree = "<group>";
+		};
+		A61639D12C814FBA00CD4E64 = {
+			isa = PBXGroup;
+			children = (
+				A61639DC2C814FBA00CD4E64 /* FitnessGo */,
+				A61639ED2C814FBE00CD4E64 /* FitnessGoTests */,
+				A61639F72C814FBE00CD4E64 /* FitnessGoUITests */,
+				A61639DB2C814FBA00CD4E64 /* Products */,
+				A669AD232C960531008C6EA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A61639DB2C814FBA00CD4E64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A61639DA2C814FBA00CD4E64 /* FitnessGo.app */,
+				A61639EA2C814FBE00CD4E64 /* FitnessGoTests.xctest */,
+				A61639F42C814FBE00CD4E64 /* FitnessGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A61639DC2C814FBA00CD4E64 /* FitnessGo */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC92ED2CB784160005B892 /* FitnessGo.entitlements */,
+				A61639DD2C814FBA00CD4E64 /* FitnessGoApp.swift */,
+				A669ACDA2C9594BB008C6EA4 /* AppDelegate.swift */,
+				A6F8D1BB2C8C785800093C59 /* Yufei */,
+				A6F8D1B02C8C75F600093C59 /* Yiting */,
+				A6F8D1AD2C8C727E00093C59 /* Jiayi */,
+				A669ACD12C958A3F008C6EA4 /* Game */,
+				A61639E32C814FBE00CD4E64 /* Preview Content */,
+				A61639E12C814FBE00CD4E64 /* Assets.xcassets */,
+			);
+			path = FitnessGo;
+			sourceTree = "<group>";
+		};
+		A61639E32C814FBE00CD4E64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A61639E42C814FBE00CD4E64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A61639ED2C814FBE00CD4E64 /* FitnessGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A61639EE2C814FBE00CD4E64 /* FitnessGoTests.swift */,
+			);
+			path = FitnessGoTests;
+			sourceTree = "<group>";
+		};
+		A61639F72C814FBE00CD4E64 /* FitnessGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A61639F82C814FBE00CD4E64 /* FitnessGoUITests.swift */,
+				A61639FA2C814FBE00CD4E64 /* FitnessGoUITestsLaunchTests.swift */,
+			);
+			path = FitnessGoUITests;
+			sourceTree = "<group>";
+		};
+		A6163A122C886F2600CD4E64 /* HealthDataPage */ = {
+			isa = PBXGroup;
+			children = (
+				A6163A072C8736D600CD4E64 /* StepsExchange.swift */,
+				A6163A092C87385A00CD4E64 /* HealthData.swift */,
+			);
+			path = HealthDataPage;
+			sourceTree = "<group>";
+		};
+		A6163A132C886F8000CD4E64 /* Comunity */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8D1652C896D0F00093C59 /* NavbarCommunity.swift */,
+			);
+			path = Comunity;
+			sourceTree = "<group>";
+		};
+		A6163A172C8885FA00CD4E64 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				A6163A0B2C87387100CD4E64 /* NavbarHealth.swift */,
+				A6F8D1672C896D9F00093C59 /* CoinExchange */,
+				A6163A122C886F2600CD4E64 /* HealthDataPage */,
+				A669AD892CAE9550008C6EA4 /* GlobalEnvironment.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		A6163A192C88863C00CD4E64 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8D1632C896BC700093C59 /* NavbarGame.swift */,
+				A6163A1A2C88866100CD4E64 /* GameRule */,
+				A6163A252C89408E00CD4E64 /* StartGame */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A6163A1A2C88866100CD4E64 /* GameRule */ = {
+			isa = PBXGroup;
+			children = (
+				A6163A1F2C88879700CD4E64 /* GameStartTitle.swift */,
+				A6163A212C888D1600CD4E64 /* Rule.swift */,
+			);
+			path = GameRule;
+			sourceTree = "<group>";
+		};
+		A6163A252C89408E00CD4E64 /* StartGame */ = {
+			isa = PBXGroup;
+			children = (
+				A6163A282C895B0900CD4E64 /* PlayGamePage.swift */,
+			);
+			path = StartGame;
+			sourceTree = "<group>";
+		};
+		A669ACD12C958A3F008C6EA4 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD262C960734008C6EA4 /* GameScene.swift */,
+				A669AD702C997057008C6EA4 /* ObservableObject.swift */,
+				A669ACD82C9592F4008C6EA4 /* GameScene.sks */,
+				A669AD1D2C95995A008C6EA4 /* GameViewController.swift */,
+				A669AD662C96A7A9008C6EA4 /* Main.storyboard */,
+				A669AD682C96AA07008C6EA4 /* GameViewControllerRepresentable.swift */,
+				A669AD6C2C96F8CA008C6EA4 /* RunGame.swift */,
+				A669AD6E2C98052C008C6EA4 /* GameExtenstion.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A669AD232C960531008C6EA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD242C960531008C6EA4 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6F8D1672C896D9F00093C59 /* CoinExchange */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8D16A2C896DF200093C59 /* Rate.swift */,
+			);
+			path = CoinExchange;
+			sourceTree = "<group>";
+		};
+		A6F8D1AD2C8C727E00093C59 /* Jiayi */ = {
+			isa = PBXGroup;
+			children = (
+				A6163A232C893DE000CD4E64 /* Line.swift */,
+				A6163A1D2C88874500CD4E64 /* BackSymbol.swift */,
+				A69A6F352C9339A3002799A7 /* ButtonPressActions.swift */,
+				A6F8D1AF2C8C747E00093C59 /* View */,
+				A6163A192C88863C00CD4E64 /* Game */,
+				A6163A172C8885FA00CD4E64 /* Health */,
+				A6163A132C886F8000CD4E64 /* Comunity */,
+			);
+			path = Jiayi;
+			sourceTree = "<group>";
+		};
+		A6F8D1AF2C8C747E00093C59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6163A0F2C886EA300CD4E64 /* RequestConfirm.swift */,
+				A6F8D1682C896DC500093C59 /* ExchangeOverview.swift */,
+				A61639DF2C814FBA00CD4E64 /* HealthView.swift */,
+				A6163A262C8940B700CD4E64 /* StartGameOverview.swift */,
+				A6163A1B2C8886A900CD4E64 /* RuleOverview.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6F8D1B02C8C75F600093C59 /* Yiting */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8D1B12C8C765700093C59 /* CommunityView.swift */,
+				A6F8D1B32C8C771300093C59 /* VsView.swift */,
+				A6F8D1B52C8C774D00093C59 /* RankView.swift */,
+				A6F8D1B72C8C777900093C59 /* WinView.swift */,
+				A6F8D1B92C8C77CE00093C59 /* GameOverView.swift */,
+				A69A6F372C933B46002799A7 /* SpinsView.swift */,
+				A669AD722C9B3518008C6EA4 /* ShowGiftView.swift */,
+			);
+			path = Yiting;
+			sourceTree = "<group>";
+		};
+		A6F8D1BB2C8C785800093C59 /* Yufei */ = {
+			isa = PBXGroup;
+			children = (
+				0C3095F12CBE8DDE004070B0 /* Sound effect */,
+				A6FC92B22CB77DD40005B892 /* HeathData */,
+				A6FC92B12CB77DA80005B892 /* GamePrepare */,
+				A69A6F312C931E17002799A7 /* NavbarProfile.swift */,
+				A69A6F332C931EAC002799A7 /* NavbarLogin.swift */,
+				A6F8D1BE2C8C7E8300093C59 /* Views */,
+				A6F8D1CB2C8C80BE00093C59 /* Model */,
+				A6F8D1D22C8C826C00093C59 /* resources */,
+			);
+			path = Yufei;
+			sourceTree = "<group>";
+		};
+		A6F8D1BE2C8C7E8300093C59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6F8D1BC2C8C7E5500093C59 /* UserProfile.swift */,
+				A6F8D1BF2C8C7EA100093C59 /* device.swift */,
+				A6F8D1C12C8C7EEE00093C59 /* Register.swift */,
+				A6F8D1C32C8C7F5900093C59 /* extension.swift */,
+				A69A6F2D2C9318D1002799A7 /* Login.swift */,
+				A69A6F2F2C9318F6002799A7 /* helpdocument.swift */,
+				A669AD872CAE94D7008C6EA4 /* StepCountView_backup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6F8D1CB2C8C80BE00093C59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD742C9B359A008C6EA4 /* SpinItemsModel.swift */,
+				A669AD842CAE8C8D008C6EA4 /* StepModel.swift */,
+				A6FC92AD2CB64E5C0005B892 /* CheckboxModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6F8D1D22C8C826C00093C59 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		A6FC92B12CB77DA80005B892 /* GamePrepare */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD762C9B35F8008C6EA4 /* Equipment.swift */,
+				0C3095F92CBEA7EF004070B0 /* EquipmentComponents.swift */,
+				0C3095FB2CBEA913004070B0 /* Bag.swift */,
+			);
+			path = GamePrepare;
+			sourceTree = "<group>";
+		};
+		A6FC92B22CB77DD40005B892 /* HeathData */ = {
+			isa = PBXGroup;
+			children = (
+				A6FC92B32CB77E1B0005B892 /* StepRead.swift */,
+			);
+			path = HeathData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A61639D92C814FBA00CD4E64 /* FitnessGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61639FE2C814FBE00CD4E64 /* Build configuration list for PBXNativeTarget "FitnessGo" */;
+			buildPhases = (
+				A61639D62C814FBA00CD4E64 /* Sources */,
+				A61639D72C814FBA00CD4E64 /* Frameworks */,
+				A61639D82C814FBA00CD4E64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitnessGo;
+			productName = FitnessGo;
+			productReference = A61639DA2C814FBA00CD4E64 /* FitnessGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A61639E92C814FBE00CD4E64 /* FitnessGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6163A012C814FBE00CD4E64 /* Build configuration list for PBXNativeTarget "FitnessGoTests" */;
+			buildPhases = (
+				A61639E62C814FBE00CD4E64 /* Sources */,
+				A61639E72C814FBE00CD4E64 /* Frameworks */,
+				A61639E82C814FBE00CD4E64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61639EC2C814FBE00CD4E64 /* PBXTargetDependency */,
+			);
+			name = FitnessGoTests;
+			productName = FitnessGoTests;
+			productReference = A61639EA2C814FBE00CD4E64 /* FitnessGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A61639F32C814FBE00CD4E64 /* FitnessGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6163A042C814FBE00CD4E64 /* Build configuration list for PBXNativeTarget "FitnessGoUITests" */;
+			buildPhases = (
+				A61639F02C814FBE00CD4E64 /* Sources */,
+				A61639F12C814FBE00CD4E64 /* Frameworks */,
+				A61639F22C814FBE00CD4E64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61639F62C814FBE00CD4E64 /* PBXTargetDependency */,
+			);
+			name = FitnessGoUITests;
+			productName = FitnessGoUITests;
+			productReference = A61639F42C814FBE00CD4E64 /* FitnessGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A61639D22C814FBA00CD4E64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A61639D92C814FBA00CD4E64 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A61639E92C814FBE00CD4E64 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A61639D92C814FBA00CD4E64;
+					};
+					A61639F32C814FBE00CD4E64 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A61639D92C814FBA00CD4E64;
+					};
+				};
+			};
+			buildConfigurationList = A61639D52C814FBA00CD4E64 /* Build configuration list for PBXProject "FitnessGo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A61639D12C814FBA00CD4E64;
+			productRefGroup = A61639DB2C814FBA00CD4E64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A61639D92C814FBA00CD4E64 /* FitnessGo */,
+				A61639E92C814FBE00CD4E64 /* FitnessGoTests */,
+				A61639F32C814FBE00CD4E64 /* FitnessGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A61639D82C814FBA00CD4E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3095F52CBE8DDE004070B0 /* running.wav in Resources */,
+				A61639E52C814FBE00CD4E64 /* Preview Assets.xcassets in Resources */,
+				0C3095F22CBE8DDE004070B0 /* cheering.wav in Resources */,
+				A669ACD92C9592F4008C6EA4 /* GameScene.sks in Resources */,
+				0C3095F42CBE8DDE004070B0 /* lose.wav in Resources */,
+				0C3095F32CBE8DDE004070B0 /* coin.wav in Resources */,
+				0C3095F62CBE8DDE004070B0 /* win.wav in Resources */,
+				A61639E22C814FBE00CD4E64 /* Assets.xcassets in Resources */,
+				A669AD672C96A7A9008C6EA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61639E82C814FBE00CD4E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61639F22C814FBE00CD4E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A61639D62C814FBA00CD4E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F8D1662C896D0F00093C59 /* NavbarCommunity.swift in Sources */,
+				A69A6F2E2C9318D1002799A7 /* Login.swift in Sources */,
+				A669AD882CAE94D7008C6EA4 /* StepCountView_backup.swift in Sources */,
+				A6163A202C88879700CD4E64 /* GameStartTitle.swift in Sources */,
+				A6163A222C888D1600CD4E64 /* Rule.swift in Sources */,
+				A669AD1E2C95995A008C6EA4 /* GameViewController.swift in Sources */,
+				A669AD692C96AA07008C6EA4 /* GameViewControllerRepresentable.swift in Sources */,
+				A6163A1C2C8886A900CD4E64 /* RuleOverview.swift in Sources */,
+				A69A6F362C9339A3002799A7 /* ButtonPressActions.swift in Sources */,
+				A669AD6D2C96F8CA008C6EA4 /* RunGame.swift in Sources */,
+				A6FC92AE2CB64E5C0005B892 /* CheckboxModel.swift in Sources */,
+				A6F8D1C22C8C7EEE00093C59 /* Register.swift in Sources */,
+				A61639E02C814FBA00CD4E64 /* HealthView.swift in Sources */,
+				A6163A1E2C88874500CD4E64 /* BackSymbol.swift in Sources */,
+				A6F8D1BD2C8C7E5500093C59 /* UserProfile.swift in Sources */,
+				A6F8D1C02C8C7EA100093C59 /* device.swift in Sources */,
+				A669AD6F2C98052C008C6EA4 /* GameExtenstion.swift in Sources */,
+				A69A6F322C931E17002799A7 /* NavbarProfile.swift in Sources */,
+				A6163A272C8940B700CD4E64 /* StartGameOverview.swift in Sources */,
+				A6163A292C895B0900CD4E64 /* PlayGamePage.swift in Sources */,
+				A69A6F382C933B46002799A7 /* SpinsView.swift in Sources */,
+				A6F8D1642C896BC700093C59 /* NavbarGame.swift in Sources */,
+				A6163A082C8736D600CD4E64 /* StepsExchange.swift in Sources */,
+				A669AD8A2CAE9550008C6EA4 /* GlobalEnvironment.swift in Sources */,
+				A669ACDB2C9594BB008C6EA4 /* AppDelegate.swift in Sources */,
+				A669AD272C960734008C6EA4 /* GameScene.swift in Sources */,
+				A669AD752C9B359A008C6EA4 /* SpinItemsModel.swift in Sources */,
+				A6163A102C886EA300CD4E64 /* RequestConfirm.swift in Sources */,
+				A6F8D1692C896DC500093C59 /* ExchangeOverview.swift in Sources */,
+				A669AD772C9B35F8008C6EA4 /* Equipment.swift in Sources */,
+				0C3095FC2CBEA913004070B0 /* Bag.swift in Sources */,
+				A6F8D1BA2C8C77CE00093C59 /* GameOverView.swift in Sources */,
+				A6F8D16B2C896DF200093C59 /* Rate.swift in Sources */,
+				A669AD732C9B3518008C6EA4 /* ShowGiftView.swift in Sources */,
+				A61639DE2C814FBA00CD4E64 /* FitnessGoApp.swift in Sources */,
+				A6F8D1B22C8C765700093C59 /* CommunityView.swift in Sources */,
+				A6F8D1B82C8C777900093C59 /* WinView.swift in Sources */,
+				A6163A0C2C87387100CD4E64 /* NavbarHealth.swift in Sources */,
+				A6FC92B42CB77E1B0005B892 /* StepRead.swift in Sources */,
+				A6F8D1C42C8C7F5900093C59 /* extension.swift in Sources */,
+				A6F8D1B62C8C774D00093C59 /* RankView.swift in Sources */,
+				A6F8D1B42C8C771300093C59 /* VsView.swift in Sources */,
+				0C3095F82CBE8E1B004070B0 /* playsound.swift in Sources */,
+				A69A6F302C9318F6002799A7 /* helpdocument.swift in Sources */,
+				A669AD712C997057008C6EA4 /* ObservableObject.swift in Sources */,
+				0C3095FA2CBEA7EF004070B0 /* EquipmentComponents.swift in Sources */,
+				A669AD852CAE8C8D008C6EA4 /* StepModel.swift in Sources */,
+				A6163A242C893DE000CD4E64 /* Line.swift in Sources */,
+				A69A6F342C931EAC002799A7 /* NavbarLogin.swift in Sources */,
+				A6163A0A2C87385A00CD4E64 /* HealthData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61639E62C814FBE00CD4E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61639EF2C814FBE00CD4E64 /* FitnessGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61639F02C814FBE00CD4E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61639F92C814FBE00CD4E64 /* FitnessGoUITests.swift in Sources */,
+				A61639FB2C814FBE00CD4E64 /* FitnessGoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A61639EC2C814FBE00CD4E64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61639D92C814FBA00CD4E64 /* FitnessGo */;
+			targetProxy = A61639EB2C814FBE00CD4E64 /* PBXContainerItemProxy */;
+		};
+		A61639F62C814FBE00CD4E64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61639D92C814FBA00CD4E64 /* FitnessGo */;
+			targetProxy = A61639F52C814FBE00CD4E64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A61639FC2C814FBE00CD4E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A61639FD2C814FBE00CD4E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A61639FF2C814FBE00CD4E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitnessGo/FitnessGo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessGo/Preview Content\"";
+				DEVELOPMENT_TEAM = H9CKNHQ59L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "we would like access your steps count";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yufei-FitnessGo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6163A002C814FBE00CD4E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitnessGo/FitnessGo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessGo/Preview Content\"";
+				DEVELOPMENT_TEAM = H9CKNHQ59L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "we would like access your steps count";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yufei-FitnessGo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6163A022C814FBE00CD4E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashley.FitnessGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnessGo";
+			};
+			name = Debug;
+		};
+		A6163A032C814FBE00CD4E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashley.FitnessGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnessGo";
+			};
+			name = Release;
+		};
+		A6163A052C814FBE00CD4E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashley.FitnessGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitnessGo;
+			};
+			name = Debug;
+		};
+		A6163A062C814FBE00CD4E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashley.FitnessGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitnessGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A61639D52C814FBA00CD4E64 /* Build configuration list for PBXProject "FitnessGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61639FC2C814FBE00CD4E64 /* Debug */,
+				A61639FD2C814FBE00CD4E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61639FE2C814FBE00CD4E64 /* Build configuration list for PBXNativeTarget "FitnessGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61639FF2C814FBE00CD4E64 /* Debug */,
+				A6163A002C814FBE00CD4E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6163A012C814FBE00CD4E64 /* Build configuration list for PBXNativeTarget "FitnessGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6163A022C814FBE00CD4E64 /* Debug */,
+				A6163A032C814FBE00CD4E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6163A042C814FBE00CD4E64 /* Build configuration list for PBXNativeTarget "FitnessGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6163A052C814FBE00CD4E64 /* Debug */,
+				A6163A062C814FBE00CD4E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A61639D22C814FBA00CD4E64 /* Project object */;
+}
